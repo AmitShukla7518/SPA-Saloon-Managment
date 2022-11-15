@@ -19,5 +19,6 @@ router.post('/AddStaff', StaffController.AddStaff)
 
 router.get('/GetEmpList', StaffController.GetEmpList)
 router.delete("/DeleteEMP/:EmpCode",StaffController.DeleteEMP);
+router.get("/search/:key",StaffController.SearchEMP)
 
 module.exports = router;
